@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrolleybusWPFApp", "TrolleybusWPFApp.csproj", "{A74FFAFD-8F2B-4123-B7E3-EB802E9389A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A74FFAFD-8F2B-4123-B7E3-EB802E9389A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74FFAFD-8F2B-4123-B7E3-EB802E9389A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74FFAFD-8F2B-4123-B7E3-EB802E9389A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74FFAFD-8F2B-4123-B7E3-EB802E9389A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CBF1D76-C3EA-4BEA-B9D0-8C7E6DF9255F}
+	EndGlobalSection
+EndGlobal

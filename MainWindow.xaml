@@ -1,0 +1,22 @@
+﻿<Window x:Class="TrolleybusWPFApp.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrolleybusWPFApp.Views"
+        xmlns:viewModel="clr-namespace:TrolleybusWPFApp.ViewModels"
+        mc:Ignorable="d"
+        Title="Trolleybus Simulation" Height="450" Width="800">
+    <Window.DataContext>
+        <viewModel:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <StackPanel Margin="10">
+            <Button Content="Add Trolleybus" Command="{Binding AddTrolleybusCommand}" Width="150" Margin="5"/>
+            <Button Content="Start Trolleybus" Command="{Binding StartTrolleybusCommand}" Width="150" Margin="5" IsEnabled="{Binding SelectedTrolleybus}"/>
+            <Button Content="Stop Trolleybus" Command="{Binding StopTrolleybusCommand}" Width="150" Margin="5" IsEnabled="{Binding SelectedTrolleybus}"/>
+            <ListBox ItemsSource="{Binding Trolleybuses}" DisplayMemberPath="TrolleybusNumber" SelectedItem="{Binding SelectedTrolleybus}" Height="200" Margin="5"/>
+            <ListBox ItemsSource="{Binding Logs}" Height="200" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
